@@ -112,31 +112,26 @@ blaash-assignment/
 └── README.md             # Project documentation
 
 ```
-Usage
+## Usage
 
-Login:
+1. **Login**:
+   - Use Google or email to log in.
 
-Use Google or email to log in.
+2. **Manage Videos**:
+   - Navigate to the "Shoppable Video" section to view and manage videos.
+   - Click on a video to play it in a modal.
+   - Update video status and thumbnail title.
 
-Manage Videos:
-
-Navigate to the "Shoppable Video" section to view and manage videos.
-
+3. **Playlist Manager**:
+   - Navigate to the "Playlist Manager" section.
+   - Drag and drop videos to reorder them.
+   - Search for videos and add them to the playlist.
 Click on a video to play it in a modal.
 
-Update video status and thumbnail title.
+4. **Generate Code**:
+   - Click the "Generate Code" button to get an embeddable code for a video.
 
-Playlist Manager:
 
-Navigate to the "Playlist Manager" section.
-
-Drag and drop videos to reorder them.
-
-Search for videos and add them to the playlist.
-
-Generate Code:
-
-Click the "Generate Code" button to get an embeddable code for a video.
 Contributing
 Contributions are welcome! Please follow these steps:
 
