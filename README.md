@@ -63,6 +63,7 @@
 npm install
 # or
 yarn install
+
 2.Set up environment variables:
 Create a .env file in the root directory and add the following:
 VITE_YOUTUBE_API_KEY=your_youtube_api_key
@@ -72,10 +73,12 @@ VITE_FIREBASE_PROJECT_ID=your_firebase_project_id
 VITE_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
 VITE_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
 VITE_FIREBASE_APP_ID=your_firebase_app_id
+
 3.Run the development server:
 npm run dev
 # or
 yarn dev
+
 4.Open the app:
 Visit http://localhost:5173 in your browser.
 Live Demo
@@ -96,6 +99,7 @@ blaash-assignment/
 ├── package.json          # Project dependencies
 └── README.md             # Project documentation
 Usage
+
 Login:
 
 Use Google or email to log in.
