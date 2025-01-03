@@ -82,7 +82,7 @@ const PlaylistCards = () => {
           part: "snippet",
           q: query, // Search query
           type: "video",
-          maxResults: 2, // Number of results to fetch
+          maxResults: 6, // Number of results to fetch
           key: API_KEY,
         },
       });

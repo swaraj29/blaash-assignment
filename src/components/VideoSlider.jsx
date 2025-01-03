@@ -16,7 +16,7 @@ const VideoSlider = () => {
             part: "snippet",
             q: "product video", // Search query
             type: "video",
-            maxResults: 0, // Number of results to fetch
+            maxResults: 3, // Number of results to fetch
             key: API_KEY,
           },
         });
