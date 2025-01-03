@@ -132,18 +132,30 @@ Click on a video to play it in a modal.
    - Click the "Generate Code" button to get an embeddable code for a video.
 
 
-Contributing
+## Contributing
+
 Contributions are welcome! Please follow these steps:
 
-Fork the repository.
+## Contributing
 
-Create a new branch (git checkout -b feature/YourFeatureName).
+Contributions are welcome! Please follow these steps:
 
-Commit your changes (git commit -m 'Add some feature').
+1. **Fork the repository**:
+   - Click the "Fork" button on the top right of the repository page.
 
-Push to the branch (git push origin feature/YourFeatureName).
+2. **Create a new branch**:
+   ```bash
+   git checkout -b feature/YourFeatureName.
 
-Open a pull request.
+Commit your changes:
+git commit -m 'Add some feature'
+Push to the branch:
+git push origin feature/YourFeatureName
+Open a pull request:
+
+Go to the original repository and click "New Pull Request".
+
+Provide a clear description of your changes and submit the pull request.
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
