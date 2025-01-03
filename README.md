@@ -83,6 +83,7 @@ Check out the live demo of the project:
 👉 https://blaash-assignment-tawny.vercel.app/
 
 Folder Structure
+
 blaash-assignment/
 ├── public/               # Static assets
 ├── src/                  # Source code
