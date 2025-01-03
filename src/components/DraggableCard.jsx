@@ -14,7 +14,7 @@ const DraggableCard = ({ id, title, thumbnail }) => {
   return (
     <div
       ref={drag} // Attach the drag ref to the card
-      className={`bg-[#2b2b3d] p-4 rounded-lg shadow-md ${
+      className={`bg-[#2b2b3d] p-4 rounded-lg shadow-md transition-all duration-300 ${
         isDragging ? "opacity-50" : ""
       }`}
       style={{ cursor: "move" }} // Change cursor to indicate draggable
@@ -23,11 +23,13 @@ const DraggableCard = ({ id, title, thumbnail }) => {
       <img
         src={thumbnail}
         alt={title}
-        className="w-full h-40 object-cover rounded"
+        className="w-full h-40 sm:h-36 md:h-48 lg:h-52 object-cover rounded"
       />
 
       {/* Title */}
-      <h3 className="text-white text-center mt-2">{title}</h3>
+      <h3 className="text-white text-center mt-2 text-sm sm:text-base md:text-lg lg:text-xl">
+        {title}
+      </h3>
     </div>
   );
 };
