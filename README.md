@@ -89,11 +89,15 @@ yarn dev
 
 ### Open the app:
 Visit http://localhost:5173 in your browser.
+
 Live Demo
+
 Check out the live demo of the project:
+
 👉 https://blaash-assignment-tawny.vercel.app/
 
-Folder Structure
+## Folder Structure
+``` bash
 
 blaash-assignment/
 ├── public/               # Static assets
@@ -106,6 +110,8 @@ blaash-assignment/
 ├── .env                  # Environment variables
 ├── package.json          # Project dependencies
 └── README.md             # Project documentation
+
+```
 Usage
 
 Login:
