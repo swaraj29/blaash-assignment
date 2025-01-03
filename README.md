@@ -147,34 +147,34 @@ Contributions are welcome! Please follow these steps:
    ```bash
    git checkout -b feature/YourFeatureName.
 
-Commit your changes:
-git commit -m 'Add some feature'
-Push to the branch:
-git push origin feature/YourFeatureName
-Open a pull request:
+1. **Commit your changes**:
+   ```bash
+   git commit -m 'Add some feature'
 
-Go to the original repository and click "New Pull Request".
+2. **Push to the branch**:
+   ```bash
+   git push origin feature/YourFeatureName
 
-Provide a clear description of your changes and submit the pull request.
+3. **Open a pull request**:
+   - Go to the original repository and click **"New Pull Request"**.
+   - Provide a clear description of your changes.
+   - Submit the pull request.
 
-License
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Acknowledgments
-YouTube Data API for providing video data.
+## Acknowledgments
 
-Firebase for authentication.
+- **YouTube Data API** for providing video data.
+- **Firebase** for authentication.
+- **Tailwind CSS** for making styling easier.
+- **React DnD** for drag-and-drop functionality.
 
-Tailwind CSS for making styling easier.
+## Contact
 
-React DnD for drag-and-drop functionality.
-
-Contact
 For questions or feedback, please reach out to:
 
-Your Name - your.email@example.com
-
-Project Link: https://github.com/your-username/blaash-assignment
-
-Live Demo: https://blaash-assignment-tawny.vercel.app/
+- **Your Name** - [your.email@example.com](mailto:your.email@example.com)
+- **Project Link**: [https://github.com/your-username/blaash-assignment](https://github.com/your-username/blaash-assignment)
+- **Live Demo**: [https://blaash-assignment-tawny.vercel.app/](https://blaash-assignment-tawny.vercel.app/)
 
