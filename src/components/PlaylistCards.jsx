@@ -27,13 +27,22 @@ const DraggableCard = ({ id, title, thumbnail, index, moveCard, onVideoClick }) 
     >
       <img src={thumbnail} alt={title} className="w-full h-40 object-cover" />
       <div className="p-4">
-        <h3 className="text-white font-semibold text-sm md:text-base">{title}</h3>
-        <div className="flex items-center mt-2 text-gray-400 text-xs md:text-sm">
+        <h3 className="text-white font-semibold">{title}</h3>
+        <div className="flex items-center mt-2 text-gray-400 text-sm">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-4 h-4 mr-2">
             <path d="M12 2a4 4 0 0 0-4 4v4H6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4zm0 2a2 2 0 0 1 2 2v4h-4V6a2 2 0 0 1 2-2zm-6 8h12v6H6v-6z" />
           </svg>
           Videos
         </div>
+      </div>
+      <div className="absolute top-2 right-2" onClick={e => e.stopPropagation()}>
+        <button className="text-gray-400 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+            <circle cx="12" cy="5" r="2" />
+            <circle cx="12" cy="12" r="2" />
+            <circle cx="12" cy="19" r="2" />
+          </svg>
+        </button>
       </div>
     </div>
   );
@@ -75,10 +84,10 @@ const PlaylistCards = () => {
 
   return (
     <DndProvider backend={HTML5Backend}>
-      <div className="p-4 sm:p-6 bg-[#27262F] min-h-screen">
+      <div className="p-6 bg-[#27262F] min-h-screen">
         {activeVideo && (
           <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-            <div className="w-full max-w-lg md:max-w-4xl max-h-[80vh] bg-black rounded-lg overflow-hidden relative">
+            <div className="w-full max-w-4xl max-h-[80vh] bg-black rounded-lg overflow-hidden relative">
               <button
                 onClick={() => setActiveVideo(null)}
                 className="absolute top-4 right-4 text-white bg-gray-800 rounded-full p-2 hover:bg-gray-700"
@@ -97,23 +106,23 @@ const PlaylistCards = () => {
           </div>
         )}
 
-        <h2 className="text-white text-lg md:text-xl mb-4">Product Playlists</h2>
+        <h2 className="text-white text-xl mb-4">Product Playlists</h2>
         <div className="mb-6">
           <input
             type="text"
             placeholder="Search videos..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="w-full bg-[#3C3C3C] text-[#858585] px-3 py-1.5 rounded placeholder-[#858585] text-sm md:text-base"
+            className="w-full bg-[#3C3C3C] text-[#858585] px-3 py-1.5 rounded placeholder-[#858585]"
           />
           <button
             onClick={fetchYouTubeVideos}
-            className="mt-2 w-full md:w-auto bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700 text-sm md:text-base"
+            className="mt-2 bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700"
           >
             Search
           </button>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-3 gap-6">
           {videos.map((video, index) => (
             <DraggableCard
               key={video.id.videoId}

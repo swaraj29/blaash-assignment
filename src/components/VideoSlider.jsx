@@ -62,7 +62,6 @@ const VideoSlider = () => {
 
   return (
     <div className="relative">
-      {/* Video Modal */}
       {activeVideo && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
           <div className="w-full max-w-4xl max-h-[80vh] bg-black rounded-lg overflow-hidden relative">
@@ -84,13 +83,11 @@ const VideoSlider = () => {
         </div>
       )}
 
-      {/* Generate Code Button */}
-      <button className="absolute -top-9 left-1/2 transform -translate-x-1/2 bg-[#2F80ED] text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <button className="absolute -top-9 left-[70%] bg-[#2F80ED] text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
         Generate Code
       </button>
 
-      {/* Form and Videos */}
-      <div className="bg-[#27262F] p-6 rounded-lg text-white mt-10 space-y-6">
+      <div className="bg-[#27262F] p-6 rounded-lg text-white mt-10">
         <div className="mb-6">
           <h2 className="text-lg font-bold mb-2">Thumbnail Title</h2>
           <input
@@ -128,19 +125,18 @@ const VideoSlider = () => {
           </div>
         </div>
 
-        {/* Videos List */}
         <div className="space-y-4 mb-6">
           {videos.map((video) => (
             <div
               key={video.id.videoId}
-              className="bg-[#2D2D30] p-4 rounded-lg flex flex-col md:flex-row justify-between items-start md:items-center cursor-pointer hover:bg-[#3D3D40]"
+              className="bg-[#2D2D30] p-4 rounded-lg flex justify-between items-center cursor-pointer hover:bg-[#3D3D40]"
               onClick={() => handleVideoClick(video)}
             >
-              <div className="flex items-start md:items-center space-x-4">
+              <div className="flex items-center space-x-4">
                 <img
                   src={video.snippet.thumbnails.medium.url}
                   alt={video.snippet.title}
-                  className="w-24 h-16 object-cover rounded-lg"
+                  className="w-16 h-12 object-cover rounded-lg"
                 />
                 <div>
                   <h4 className="text-lg font-semibold">{video.snippet.title}</h4>
@@ -148,7 +144,7 @@ const VideoSlider = () => {
                   <p className="text-gray-400">Products Attached: {video.productsAttached}</p>
                 </div>
               </div>
-              <div className="mt-4 md:mt-0 flex items-center" onClick={(e) => e.stopPropagation()}>
+              <div className="flex items-center" onClick={(e) => e.stopPropagation()}>
                 <input
                   type="checkbox"
                   className="w-5 h-5 accent-blue-500 focus:ring-2 focus:ring-blue-500"
