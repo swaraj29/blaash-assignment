@@ -61,7 +61,7 @@
 
 1.Install dependencies:
 npm install
-# or
+or
 yarn install
 
 2.Set up environment variables:
