@@ -11,12 +11,12 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBPS3BpimTpsFHKYhkq2Ll7LrRWJ_b7svA",
-  authDomain: "design-studio-9f42a.firebaseapp.com",
-  projectId: "design-studio-9f42a",
-  storageBucket: "design-studio-9f42a.firebasestorage.app",
-  messagingSenderId: "689605692746",
-  appId: "1:689605692746:web:d786f48a89d26e039d45b3",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
