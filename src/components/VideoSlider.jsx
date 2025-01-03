@@ -64,7 +64,7 @@ const VideoSlider = () => {
   return (
     <div className="relative">
       {/* Generate Code Button */}
-      <button className="absolute -top-2 left-[70%] bg-[#2F80ED] text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <button className="absolute -top-9 left-[70%] bg-[#2F80ED] text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
         Generate Code
       </button>
 
