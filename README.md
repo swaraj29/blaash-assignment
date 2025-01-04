@@ -94,7 +94,7 @@ Live Demo
 
 Check out the live demo of the project:
 
-👉 https://blaash-assignment-tawny.vercel.app/
+👉 [https://blaash-assignment-tawny.vercel.app/](https://blaash-assignment-tawny.vercel.app/)
 
 ## Folder Structure
 ``` bash
